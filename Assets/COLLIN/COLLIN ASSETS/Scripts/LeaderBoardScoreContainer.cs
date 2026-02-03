@@ -11,8 +11,20 @@ public class LeaderBoardScoreContainer : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI playerLeaderBoardScoreTxt;
 
+    private int leaderBoardScoreCtnIndex;
+
 
     public TextMeshProUGUI PlayerPositionTxt => playerPositionTxt;
     public TextMeshProUGUI PlayerNameLeaderboardTxt => playerNameLeaderboardTxt;
     public TextMeshProUGUI PlayerLeaderBoardScoreTxt => playerLeaderBoardScoreTxt;
+
+
+    public int LeaderBoardScoreCtnIndex
+    {
+        get { return leaderBoardScoreCtnIndex; }
+        set
+        {
+            leaderBoardScoreCtnIndex = value;
+        }
+    }
 }
