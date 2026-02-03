@@ -96,7 +96,12 @@ public class MainMenuHandler : MonoBehaviour
 
     private void Start()
     {
-        InitializeStorePanel();
+        //InitializeStorePanel();
+
+        sectionBtn0TxtColor = storePanelSectionBtns[0].GetComponentInChildren<TextMeshProUGUI>();
+        sectionBtn1TxtColor = storePanelSectionBtns[1].GetComponentInChildren<TextMeshProUGUI>();
+
+        AssignSectionBtns();
         InitializeLeaderBoardData();
     }
 
